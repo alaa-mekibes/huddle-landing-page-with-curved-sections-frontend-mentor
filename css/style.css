@@ -193,7 +193,7 @@ picture img {
         text-align: left;
     }
 }
-.about_us_container .about_us:first-child .content,
+.about_us_container .about_us:first-of-type .content,
 .about_us_container .about_us:last-child .content {
     background: var(--Very-Pale-Blue)
 }
