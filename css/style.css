@@ -185,7 +185,7 @@ picture img {
         flex-direction: row;
         text-align: left;
         align-items: center;
-        gap: 100px;
+        gap: 80px;
         padding: 2rem 7rem 2rem 9rem
     }
     .about_us_container .about_us:nth-child(2) .content {
@@ -200,6 +200,11 @@ picture img {
 .about_us_container .about_us .content .mockup {
     width: 600px;
     margin: 0 auto
+}
+@media (min-width: 62rem) {
+    .about_us_container .about_us .content .mockup {
+        width: 500px
+}
 }
 .about_us_container .about_us .text h3 {
     font-size: 2rem;
