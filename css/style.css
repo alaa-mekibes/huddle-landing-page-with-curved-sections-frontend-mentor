@@ -134,12 +134,12 @@ picture img {
 .page_info_container .page_info {
     color: var(--Very-Dark-Cyan);
 }
-.page_info_container .page_info h2 {
+.page_info_container .page_info h3 {
     font-size: 1.75rem;
     margin-bottom: 1rem
 }
 @media (min-width: 62rem) {
-    .page_info_container .page_info h2 {
+    .page_info_container .page_info h3 {
         font-size: 2rem;
     }
     .page_info_container .page_info p {
