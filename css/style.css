@@ -185,11 +185,12 @@ picture img {
         flex-direction: row;
         text-align: left;
         align-items: center;
-        gap: 100px
+        gap: 100px;
+        padding: 2rem 7rem 2rem 9rem
     }
     .about_us_container .about_us:nth-child(2) .content {
         flex-direction:row-reverse;
-        text-align: center;
+        text-align: left;
     }
 }
 .about_us_container .about_us:first-child .content,
@@ -244,7 +245,7 @@ picture img {
 @media (min-width: 62rem) {
     .footer .box_container .box {
         flex-basis: 50%;
-        padding: 0 7rem 2rem
+        padding: 0 7rem 2rem 9rem
     }
 }
 .footer .box_container .box h3 {
