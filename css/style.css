@@ -45,6 +45,7 @@ a {
     text-decoration: none;
     color: var(--Very-Pale-Blue)
 }
+button {all: unset}
 img, picture {
     display: block;
     max-width: 100%;
