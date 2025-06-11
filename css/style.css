@@ -1,16 +1,13 @@
-/* Start Variables */
 :root {
     /* Colors */
 
         /* Primary */
-
 --Pink: hsl(322, 100%, 66%);
 --Light-Pink: hsl(321, 100%, 78%);
 --Light-Red: hsl(0, 100%, 63%);
 --White: hsl(0, 0%, 100%);
 
         /* Neutral */
-
 --Very-Dark-Cyan: hsl(192, 100%, 9%);
 --Very-Pale-Blue: hsl(207, 100%, 98%);
 
@@ -24,13 +21,11 @@
     padding: 0;
     box-sizing: border-box
 }
-html {
-    caret-color: var(--Light-Pink)
-}
+html {caret-color: var(--Light-Pink)}
 body {
     font-family: "Open Sans", serif;
     background-color: var(--White);
-    min-height: 100svh
+    min-height: 100vh
 }
 h1, h2, h3,
 h4, h5, h6 {
@@ -89,18 +84,8 @@ picture img {
     padding: 2rem;
     padding-bottom: var(--Padding-b)
 }
-@media (min-width: 62rem) {
-    .header {
-        padding: 4rem;
-    }
-}
 .header .logo img {
     width: 6.25rem
-}
-@media (min-width: 62rem) {
-    .header .logo img {
-        width: 12rem
-    }
 }
 .header a {
     color: var(--Light-Pink);
@@ -110,11 +95,6 @@ picture img {
     transition: var(--Delay-button);
     font-weight: 600;
     font-size: .75rem
-}
-@media (min-width: 62rem) {
-    .header a {
-        font-size: 1rem
-    }
 }
 .header a:hover {
     color: var(--Very-Pale-Blue);
@@ -138,15 +118,6 @@ picture img {
     font-size: 1.75rem;
     margin-bottom: 1rem
 }
-@media (min-width: 62rem) {
-    .page_info_container .page_info h3 {
-        font-size: 2rem;
-    }
-    .page_info_container .page_info p {
-        width: 50%;
-        margin: 0 auto
-    }
-}
 .page_info_container .page_info img {
     margin: 0 auto
 }
@@ -164,47 +135,22 @@ picture img {
     --light-black: hsla(192, 100%, 9%, 0.623);
     color: var(--light-black)
 }
-@media (min-width: 62rem) {
-    .page_info_container .stat {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-    }
-}
 /* End page info */
 /* Start about us */
 .about_us_container .about_us .content {
     display: flex;
-    flex-direction:column-reverse;
+    flex-direction: column-reverse;
     text-align: center;
     color: var(--Very-Dark-Cyan);
     padding: 2rem
-}
-@media (min-width: 62rem) {
-    .about_us_container .about_us .content {
-        flex-direction: row;
-        text-align: left;
-        align-items: center;
-        gap: 80px;
-        padding: 2rem 7rem 2rem 9rem
-    }
-    .about_us_container .about_us:nth-child(2) .content {
-        flex-direction:row-reverse;
-        text-align: left;
-    }
 }
 .about_us_container .about_us:first-of-type .content,
 .about_us_container .about_us:last-child .content {
     background: var(--Very-Pale-Blue)
 }
 .about_us_container .about_us .content .mockup {
-    width: 600px;
+    width: 37.5rem;
     margin: 0 auto
-}
-@media (min-width: 62rem) {
-    .about_us_container .about_us .content .mockup {
-        width: 500px
-}
 }
 .about_us_container .about_us .text h3 {
     font-size: 2rem;
@@ -237,21 +183,8 @@ picture img {
     justify-content: center;
     align-items: flex-start
 }
-@media (min-width: 62rem) {
-    .footer .box_container {
-        flex-direction: row-reverse;
-        padding-top: 40px;
-        gap: 50px;
-    }
-}
 .footer .box_container .box {
     padding: 0 2rem 2rem
-}
-@media (min-width: 62rem) {
-    .footer .box_container .box {
-        flex-basis: 50%;
-        padding: 0 7rem 2rem 9rem
-    }
 }
 .footer .box_container .box h3 {
     text-transform: uppercase;
@@ -263,31 +196,9 @@ picture img {
     margin-bottom: 1.5rem;
     font-weight: 600
 }
-@media (min-width: 62rem) {
-    .footer .box_container .box p {
-        margin-top: 1rem;
-        width: 60%
-    }
-}
 .footer .box_container .box form {
     display: flex;
     flex-direction: column
-}
-@media (min-width: 28.125rem) {
-    .footer .box_container .box form {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 1.25rem
-    }
-}
-@media (min-width: 62rem) {
-    .footer .box_container .box form {
-        display: flex;
-        flex-direction: row;
-        gap: 1.25rem;
-        justify-content: flex-start
-    }
 }
 .footer .box_container .box input[type="email"] {
     display: block;
@@ -296,12 +207,7 @@ picture img {
     border-radius: 5px;
     padding: 0.625rem 1rem;
 }
-@media (min-width: 28.125rem) {
-    .footer .box_container .box input[type="email"] {
-        padding: 0.625rem 4rem;
-    }
-}
-.footer .box_container .box input[type="submit"] {
+.footer .box_container .box button[type="submit"] {
     align-self: flex-end;
     margin-top: 15px;
     padding: 10px 25px;
@@ -313,19 +219,7 @@ picture img {
     color: var(--Very-Pale-Blue);
     cursor: pointer
 }
-@media (min-width: 28.125rem) {
-    .footer .box_container .box input[type="submit"] {
-        margin-top: 1rem;
-        margin: 0
-    }
-}
-@media (min-width: 62rem) {
-    .footer .box_container .box input[type="submit"] {
-        margin-top: 1rem;
-        margin: 0
-    }
-}
-.footer .box_container .box input[type="submit"]:hover {
+.footer .box_container .box button[type="submit"]:hover {
     background-color: var(--Light-Pink)
 }
 .footer .box_container .box img {
@@ -349,11 +243,6 @@ picture img {
     gap: 1.5rem;
     margin-top: 30px
 }
-@media (min-width: 62rem) {
-    .footer .box_container .box .icons {
-        margin-top: 4rem
-    }
-}
 .footer .box_container .box .icons a {
     font-size: 1.5rem;
     transition: var(--Delay-button)
@@ -362,3 +251,83 @@ picture img {
     color: var(--Light-Pink)
 }
     /* End Footer */
+
+@media (min-width: 62rem) {
+    .header {
+        padding: 4rem;
+    }
+    .header .logo img {
+        width: 12rem
+    }
+    .header a {
+    font-size: 1rem
+    }
+    .page_info_container .page_info h3 {
+        font-size: 2rem;
+    }
+    .page_info_container .page_info p {
+        width: 50%;
+        margin: 0 auto
+    }
+    .page_info_container .stat {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .about_us_container .about_us .content {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        gap: 80px;
+        padding: 2rem 7rem 2rem 9rem
+    }
+    .about_us_container .about_us:nth-child(2) .content {
+        flex-direction:row-reverse;
+        text-align: left;
+    }
+    .about_us_container .about_us .content .mockup {
+        width: 500px
+    }
+    .footer .box_container {
+        flex-direction: row-reverse;
+        padding-top: 40px;
+        gap: 50px;
+    }
+    .footer .box_container .box {
+        flex-basis: 50%;
+        padding: 0 7rem 2rem 9rem
+    }
+    .footer .box_container .box p {
+        margin-top: 1rem;
+        width: 60%
+    }
+    .footer .box_container .box form {
+        display: flex;
+        flex-direction: row;
+        gap: 1.25rem;
+        justify-content: flex-start
+    }
+    .footer .box_container .box input[type="submit"] {
+        margin-top: 1rem;
+        margin: 0
+    }
+    .footer .box_container .box .icons {
+        margin-top: 4rem
+    }
+}
+
+@media (min-width: 28.125rem) {
+    .footer .box_container .box form {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.25rem
+    }
+    .footer .box_container .box input[type="email"] {
+        padding: 0.625rem 4rem;
+    }
+    .footer .box_container .box button[type="submit"] {
+        margin-top: 1rem;
+        margin: 0
+    }
+}
