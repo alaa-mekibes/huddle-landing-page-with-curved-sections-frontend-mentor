@@ -43,7 +43,6 @@ ul {
 }
 a {
     text-decoration: none;
-    color: var(--Very-Pale-Blue)
 }
 button {all: unset}
 img, picture {
@@ -67,6 +66,7 @@ picture img {
 /* Start framewworks */
 .ClickButton {
     display: inline-block;
+    color: var(--Very-Pale-Blue);
     background-color: var(--Pink);
     padding: 10px 25px;
     border-radius: 1.5rem;
@@ -90,19 +90,19 @@ picture img {
 .header .logo img {
     width: 6.25rem
 }
-.header a {
+.header button {
     color: var(--Light-Pink);
     border: 1px solid;
     border-radius: 1rem;
     padding: .3125rem .9375rem;
     transition: var(--Delay-button);
     font-weight: 600;
-    font-size: .75rem
-}
-.header a:hover {
+    font-size: .75rem;
+    &:hover {
     color: var(--Very-Pale-Blue);
     background-color: var(--Pink);
-    border-color: transparent 
+    border-color: transparent;
+    }
 }
     /* End header */
     /* Start main */
@@ -263,7 +263,7 @@ picture img {
     .header .logo img {
         width: 12rem
     }
-    .header a {
+    .header button {
     font-size: 1rem
     }
     .page_info_container .page_info h3 {
