@@ -25,6 +25,8 @@ html {caret-color: var(--Light-Pink)}
 body {
     font-family: "Open Sans", serif;
     background-color: var(--White);
+    display: flex;
+    flex-direction: column;
     min-height: 100vh
 }
 h1, h2, h3,
@@ -103,6 +105,7 @@ picture img {
 }
     /* End header */
     /* Start main */
+.main_container {flex: 1}
 /* Start page info */
 .page_info_container {
     display: grid;
